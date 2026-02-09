@@ -119,6 +119,86 @@ body {
     }
 }
 
+}
+
+.floating-item {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0.6;
+    animation: floatItem 8s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatItem {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(10deg);
+    }
+}
+
+.floating-item:nth-child(7) {
+    left: 5%;
+    top: 15%;
+    animation-delay: 0.5s;
+    font-size: 3rem;
+}
+
+/* Rose */
+.floating-item:nth-child(8) {
+    left: 85%;
+    top: 10%;
+    animation-delay: 1.5s;
+    font-size: 3.5rem;
+}
+
+/* Sunflower */
+.floating-item:nth-child(9) {
+    left: 15%;
+    top: 75%;
+    animation-delay: 2.5s;
+    font-size: 3rem;
+}
+
+/* Hibiscus/Lily */
+.floating-item:nth-child(10) {
+    left: 90%;
+    top: 60%;
+    animation-delay: 3.5s;
+    font-size: 2.8rem;
+}
+
+/* Tulip */
+.floating-item:nth-child(11) {
+    left: 45%;
+    top: 85%;
+    animation-delay: 4.5s;
+    font-size: 3.2rem;
+}
+
+/* Bouquet */
+.floating-item:nth-child(12) {
+    left: 75%;
+    top: 25%;
+    animation-delay: 1s;
+    font-size: 2.5rem;
+}
+
+/* Love Face */
+.floating-item:nth-child(13) {
+    left: 25%;
+    top: 40%;
+    animation-delay: 2s;
+    font-size: 2rem;
+}
+
+/* Sparkles */
+
 .container {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
