@@ -542,6 +542,20 @@ body {
     }
 }
 
+.huge-love {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    background: linear-gradient(45deg, #ff0000, #ff1493, #ff69b4, #ff0000);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: heartbeat 1.5s infinite, gradientText 3s ease infinite;
+    text-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+    letter-spacing: 2px;
+}
+
 .emoji-rain {
     font-size: 2.5rem;
     letter-spacing: 15px;
