@@ -601,4 +601,9 @@ body {
     .message {
         font-size: 1.1rem;
     }
+
+    .huge-love {
+        font-size: 2.2rem;
+        /* Reduced size for mobile to fit on one line */
+    }
 }
