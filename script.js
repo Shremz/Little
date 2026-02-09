@@ -8,6 +8,9 @@ yesBtn.addEventListener('click', () => {
     questionContainer.classList.add('hidden');
     messageContainer.classList.remove('hidden');
 
+    // Scroll to top immediately to hide the surprise at bottom
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
     // Create confetti effect
     createConfetti();
 });
