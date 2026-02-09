@@ -602,8 +602,17 @@ body {
         font-size: 1.1rem;
     }
 
+    .greeting {
+        font-size: 1.2rem;
+        /* Reduced to fit name on one line */
+        white-space: nowrap;
+        /* Force single line if possible */
+    }
+
     .huge-love {
-        font-size: 2.2rem;
-        /* Reduced size for mobile to fit on one line */
+        font-size: 1.8rem;
+        /* Further reduced to strictly fit on one line */
+        white-space: nowrap;
+        /* Force single line */
     }
 }
