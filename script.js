@@ -9,7 +9,12 @@ yesBtn.addEventListener('click', () => {
     messageContainer.classList.remove('hidden');
 
     // Scroll to top immediately to hide the surprise at bottom
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    // Target both body and documentElement to cover all browsers
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE
+    }, 10);
 
     // Create confetti effect
     createConfetti();
