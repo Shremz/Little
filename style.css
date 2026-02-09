@@ -11,8 +11,10 @@ body {
     animation: gradientShift 15s ease infinite;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* Removed to fix mobile scroll */
+    /* align-items: center; */
+    /* Removed to fix mobile scroll */
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
@@ -199,6 +201,8 @@ body {
 /* Sparkles */
 
 .container {
+    margin: auto;
+    /* Centers the item and allows scrolling */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     padding: 60px 80px;
